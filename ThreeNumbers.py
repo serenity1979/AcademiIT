@@ -3,32 +3,18 @@
 и выводит на консоль в три строки сначала максимальное, потом минимальное, после чего оставшееся число.
 """
 
-x=int(input())
-y=int(input())
-z=int(input())
+x,y,z=int(input()),int(input()),int(input())
 if x>=y:
    if z>=x:
-     print(z)
-     print(y)
-     print(x)
+     print(z,'\n',y,'\n',x)
    elif z>y:
-     print(x)
-     print(y)
-     print(z)
+     print(x,'\n',y,'\n',z)
    else:
-     print(x)
-     print(z)
-     print(y)
+     print(x,'\n',z,'\n',y)
 else:
    if z>=y:
-     print(z)
-     print(x)
-     print(y)
+     print(z,'\n',x,'\n',y)
    elif z>x:
-     print(y)
-     print(x)
-     print(z)
+     print(y,'\n',x,'\n',z)
    else:
-     print(y)
-     print(z)
-     print(x)
+     print(y,'\n',z,'\n',x)
