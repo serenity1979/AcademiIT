@@ -22,6 +22,8 @@ Sample Output 2:
 4
 
 """
+# my variant
+'''
 s1="st"
 a=[]
 b=[]
@@ -55,4 +57,19 @@ for m in range(j):
         else:
             s+=b[m][n+1]
         print(s, end=' ')
+    print()
+'''
+
+# optimalno
+c = []
+while True:
+    a = [i for i in input().split()]
+    if a == ['end']:
+        break
+    c.append(a)
+n, m = len(c), len(c[0])
+for i in range(n):
+    for j in range(m):
+        x = int(c[i][j-1]) + int(c[i][j+1-m]) + int(c[i-1][j]) + int(c[i+1-n][j])
+        print(x, end=' ')
     print()
