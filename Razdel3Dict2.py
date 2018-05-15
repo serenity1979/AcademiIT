@@ -17,17 +17,7 @@ Sample Output:
 47
 61
 41
-'''
 
-d={}
-n=int(input())
-mkey=[int(input()) for i in range(n)]
-for key in mkey:
-  if key not in d.keys():
-        d.setdefault(key, f(key))
-  print(d.get(key))
-
-'''
 решение других:
 непонятно:
 a=[int(input()) for i in range(int(input()))]
@@ -43,4 +33,15 @@ for _ in range(int(input())):
     if x not in d:
         d[x] = f(x)
     print(d[x])
+
 '''
+
+d={}
+n=int(input())
+mkey=[int(input()) for i in range(n)]
+for key in mkey:
+  if key not in d.keys():
+        d.setdefault(key, f(key))
+  print(d.get(key))
+
+
