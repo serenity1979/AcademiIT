@@ -8,7 +8,7 @@ Sample Input: abc a bCd bC AbC BC BCD bcd ABC
 Sample Output: abc 3
 '''
 with open('inputT1.txt') as inf:
-  with open('outputT2.txt', 'w') as ouf:
+  with open('outputT1.txt', 'w') as ouf:
     d={}
     for line in inf:
         line = line.strip()
