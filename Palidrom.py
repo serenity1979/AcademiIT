@@ -3,6 +3,14 @@
 GATTAG
 
 YES
+
+Форум решений:
+s = input()
+r = s[::-1]
+if s == r:
+    print('YES')
+else:
+    print('NO')
 '''
 
 s = input()
@@ -18,15 +26,3 @@ if is_palindrom:
     print('YES')
 else:
     print('NO')
-
-
-'''
-Альтернатива:
-s = input()
-r = s[::-1]
-if s == r:
-    print('YES')
-else:
-    print('NO')
-
-'''
